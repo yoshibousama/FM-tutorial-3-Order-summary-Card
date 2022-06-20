@@ -56,10 +56,16 @@ body {
 }
 /* ************************DESKTOP */
 body {
-  background-image: url(/images/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   background-color: var(--Pale-blue);
+}
+.bg-img {
+  background: url(/images/pattern-background-desktop.svg) no-repeat center/cover;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
 main {
   display: grid;
@@ -124,8 +130,10 @@ main {
 
 /* ************************RESPONSIVE */
 @media (max-width: 1000px) {
-  body {
-    background-image: url(/images/pattern-background-mobile.svg);
+  .bg-img {
+    background: url(/images/pattern-background-mobile.svg) no-repeat
+      center/cover;
+    height: 400px;
   }
 }
 @media (max-width: 500px) {
