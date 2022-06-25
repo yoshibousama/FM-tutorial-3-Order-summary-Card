@@ -59,7 +59,8 @@ body {
   background-color: var(--Pale-blue);
 }
 .bg-img {
-  background: url(/images/pattern-background-desktop.svg) no-repeat center/cover;
+  background: url("../images/pattern-background-desktop.svg") no-repeat
+    center/cover;
   height: 50vh;
   position: absolute;
   top: 0;
@@ -131,7 +132,7 @@ main {
 /* ************************RESPONSIVE */
 @media (max-width: 1000px) {
   .bg-img {
-    background: url(/images/pattern-background-mobile.svg) no-repeat
+    background: url("../images/pattern-background-mobile.svg") no-repeat
       center/cover;
     height: 400px;
   }
